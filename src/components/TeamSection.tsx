@@ -22,7 +22,7 @@ export function TeamSection() {
             <img
               src={feature.image}
               alt={`${feature.title}'s profile`}
-              className="w-40 h-40 rounded-full mx-auto mb-4 shadow-md border-2 border-gray-300"
+              className="w-40 h-40 rounded-full mx-auto mb-4 shadow-md border-2 border-gray-300 object-cover"
               onError={(e) => (e.currentTarget.src = "harshit.png")}
             />
 
@@ -70,7 +70,7 @@ export function TeamSection() {
 
 const grid = [
   {
-    image: "harshit.png",
+    image: "sahil.jpg",
     title: "Sahil Aggarwal",
     role: "iOS Developer",
     github: "https://github.com/sahilaggarwal",
@@ -84,18 +84,18 @@ const grid = [
     LinkedIn: "https://www.linkedin.com/in/kantharshit/",
   },
   {
-    image: "harshit.png",
+    image: "ananya.jpg",
     title: "Ananya Seth",
     role: "iOS Developer",
-    github: "https://github.com/ananyaseth",
-    LinkedIn: "https://www.linkedin.com/in/ananya-seth/",
+    github: "https://github.com/AnanyaSeth29",
+    LinkedIn: "https://www.linkedin.com/in/ananya-seth-a96976238/",
   },
   {
-    image: "harshit.png",
+    image: "saksham.jpg",
     title: "Saksham Nagpal",
     role: "iOS Developer",
-    github: "https://github.com/sakshamnagpal",
-    LinkedIn: "https://www.linkedin.com/in/saksham-nagpal/",
+    github: "https://github.com/sakshamnagpall",
+    LinkedIn: "https://www.linkedin.com/in/sakshamnagpall/",
   },
 ];
 
