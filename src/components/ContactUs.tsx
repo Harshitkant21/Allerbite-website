@@ -54,7 +54,7 @@ export function ContactUsSection() {
           <AccordionItem value="item-7">
             <AccordionTrigger className="text-white">Does Allerbite have a web version?</AccordionTrigger>
             <AccordionContent>
-              No, you can access Allerbite’s full functionality on our iOS app.
+              No, you can access Allerbite&apos;s full functionality on our iOS app.
             </AccordionContent>
           </AccordionItem>
       </Accordion>

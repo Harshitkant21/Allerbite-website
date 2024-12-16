@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { useId } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -39,7 +40,7 @@ export function TeamSection() {
             {/* Icon Section */}
             <div className="absolute bottom-4 right-4 flex space-x-4">
               {feature.github && (
-                <a
+                <Link
                   href={feature.github}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -47,10 +48,10 @@ export function TeamSection() {
                   aria-label={`${feature.title}'s GitHub`}
                 >
                   <FaGithub size={20} />
-                </a>
+                </Link>
               )}
               {feature.LinkedIn && (
-                <a
+                <Link
                   href={feature.LinkedIn}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -58,7 +59,7 @@ export function TeamSection() {
                   aria-label={`${feature.title}'s LinkedIn`}
                 >
                   <FaLinkedin size={20} />
-                </a>
+                </Link>
               )}
             </div>
           </div>

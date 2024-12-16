@@ -18,68 +18,68 @@ function Footer() {
           <h2 className="text-white text-lg font-semibold mb-4">Quick Links</h2>
           <ul>
             <li>
-              <a
+              <Link
                 href="/"
                 className="hover:text-white transition-colors duration-300"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#FeatureSection"
                 className="hover:text-white transition-colors duration-300"
               >
                 Features
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#About"
                 className="hover:text-white transition-colors duration-300"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#Team"
                 className="hover:text-white transition-colors duration-300"
               >
                 Team
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#FAQ"
                 className="hover:text-white transition-colors duration-300"
               >
                 FAQ
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">Follow Us</h2>
           <div className="flex space-x-4">
-            <a
+            <Link
               href="#"
               className="hover:text-white transition-colors duration-300"
             >
               Facebook
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="hover:text-white transition-colors duration-300"
             >
               Twitter
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="hover:text-white transition-colors duration-300"
             >
               Instagram
-            </a>
+            </Link>
           </div>
         </div>
         <div>
