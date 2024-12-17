@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function page() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-neutral-900 pt-40 pb-11">
+    <div className="flex justify-center items-center min-h-screen bg-neutral-900 pt-16 lg:pt-40 pb-11">
       <div className="w-3/4 p-6 bg-neutral-700 rounded-lg shadow-lg">
         <h1 className="text-3xl font-bold text-center text-white mb-6">Privacy Policy</h1>
         
@@ -53,7 +53,7 @@ export default function page() {
         </p>
 
         <p className="text-white text-sm mt-6">
-          Effective Date: [Insert Date]
+          Effective Date: 17-12-2024
         </p>
       </div>
     </div>
