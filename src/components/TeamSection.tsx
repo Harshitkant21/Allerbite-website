@@ -71,6 +71,13 @@ export function TeamSection() {
 
 const grid = [
   {
+    image: "Aditya.jpeg",
+    title: "Aditya Gaba",
+    role: "iOS Developer",
+    github: "https://github.com/ADITYAGABA1322/",
+    LinkedIn: "https://www.linkedin.com/in/gabaaditya/",
+  },
+  {
     image: "sahil.jpg",
     title: "Sahil Aggarwal",
     role: "iOS Developer",
@@ -91,13 +98,6 @@ const grid = [
     github: "https://github.com/AnanyaSeth29",
     LinkedIn: "https://www.linkedin.com/in/ananya-seth-a96976238/",
   },
-  {
-    image: "saksham.jpg",
-    title: "Saksham Nagpal",
-    role: "iOS Developer",
-    github: "https://github.com/sakshamnagpall",
-    LinkedIn: "https://www.linkedin.com/in/sakshamnagpall/",
-  },
 ];
 
 export const Grid = ({
@@ -107,14 +107,14 @@ export const Grid = ({
   pattern?: number[][];
   size?: number;
 }) => {
-    const [p, setP] = useState<number[][] | null>(null);    
+  const [p, setP] = useState<number[][] | null>(null);
   const defaultPattern = Array.from({ length: 5 }, () => [
     Math.floor(Math.random() * 4) + 7,
     Math.floor(Math.random() * 6) + 1,
   ]);
   useEffect(() => {
     setP(pattern ?? defaultPattern);
-    },[]);
+  }, []);
 
   return (
     <div className="pointer-events-none absolute left-1/2 top-0 -ml-20 -mt-2 h-full w-full [mask-image:linear-gradient(white,transparent)]">
