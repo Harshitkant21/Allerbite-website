@@ -1,11 +1,12 @@
 "use client";
 
+import { title } from "process";
 import React, { useEffect } from "react";
 import { useId } from "react";
 
 export function FeaturesSection() {
   return (
-    <div className="py-20 lg:py-40 mx-10 lg:mx-20" id="FeatureSection" >
+    <div className="py-20 lg:py-40 mx-10 lg:mx-20" id="FeatureSection">
       <p className="text-5xl font-semibold text-center text-neutral-100 dark:text-white mb-10">
         Core Features
       </p>
@@ -30,23 +31,37 @@ export function FeaturesSection() {
 }
 
 const grid = [
-    {
-      title: "Ingredient Scanner",
-      description:
-        "Scan product ingredients using your device's camera to instantly determine if the item is safe for you based on your allergy profile, ensuring peace of mind while shopping.",
-    },
-    {
-      title: "Meal to Recipe",
-      description:
-        "Turn any meal idea into a detailed recipe with step-by-step instructions and nutritional breakdowns tailored to your preferences and available ingredients.",
-    },
-    {
-      title: "Ingredient to Recipe",
-      description:
-        "Select from the ingredients you have, and let our app suggest creative and delicious recipes to reduce food waste and simplify meal planning.",
-    },
-  ];
-  
+  {
+    title: "Ingredient Scanner",
+    description:
+      "Scan product ingredients using your device's camera to instantly determine if the item is safe for you based on your allergy profile, ensuring peace of mind while shopping.",
+  },
+  {
+    title: "Meal to Recipe",
+    description:
+      "Turn any meal idea into a detailed recipe with step-by-step instructions and nutritional breakdowns tailored to your preferences and available ingredients.",
+  },
+  {
+    title: "Ingredient to Recipe",
+    description:
+      "Select from the ingredients you have, and let our app suggest creative and delicious recipes to reduce food waste and simplify meal planning.",
+  },
+  {
+    title: "Siri & Shortcuts",
+    description:
+      "Perform tasks hands-free with Siri voice commands or custom shortcuts, making your experience faster and more convenient.",
+  },
+  {
+    title: "Cloud-Synced Data",
+    description:
+      "Securely sync your data across devices with iCloud and CloudKit, ensuring access anytime and seamless updates.",
+  },
+  {
+    title: "Real-Time Notifications",
+    description:
+      "Receive instant alerts for allergens, dietary needs, and smarter food choices, keeping you informed at all times.",
+  },
+];
 
 export const Grid = ({
   pattern,
@@ -57,13 +72,16 @@ export const Grid = ({
 }) => {
   const [p, setP] = React.useState<number[][] | null>(null);
   useEffect(() => {
-    setP(pattern ?? [
-      [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-      [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-      [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-      [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-      [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-    ])},[])
+    setP(
+      pattern ?? [
+        [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+        [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+        [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+        [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+        [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+      ]
+    );
+  }, []);
   return (
     <div className="pointer-events-none absolute left-1/2 top-0 -ml-20 -mt-2 h-full w-full [mask-image:linear-gradient(white,transparent)]">
       <div className="absolute inset-0 bg-gradient-to-r [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] dark:from-zinc-900/30 from-zinc-100/30 to-zinc-300/30 dark:to-zinc-900/30 opacity-100">

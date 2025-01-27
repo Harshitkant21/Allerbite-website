@@ -63,19 +63,19 @@ function Footer() {
           <h2 className="text-white text-lg font-semibold mb-4">Follow Us</h2>
           <div className="flex space-x-4">
             <Link
-              href="#"
+              href="https://www.linkedin.com/in/sahil-aggarwal-620050212/"
               className="hover:text-white transition-colors duration-300"
             >
-              Facebook
+              LinkedIn
             </Link>
             <Link
-              href="#"
+              href="https://x.com/Harshit61124884"
               className="hover:text-white transition-colors duration-300"
             >
               Twitter
             </Link>
             <Link
-              href="#"
+              href="https://www.instagram.com/xcode_addy/"
               className="hover:text-white transition-colors duration-300"
             >
               Instagram
@@ -85,9 +85,9 @@ function Footer() {
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">Contact Us</h2>
           <p>Chandigarh, India</p>
-          <p>Chandigarh 123456</p>
-          <p>Email: support@allerbite.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <p>Chandigarh</p>
+          <p>Email: allerbite.offical@gmail.com</p>
+          <p>Phone: (+91) 9814581570</p>
         </div>
       </div>
         <Separator className="opacity-5"/>
